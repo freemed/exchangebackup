@@ -1,0 +1,18 @@
+exchangebackup
+jeff@freemedsoftware.org
+========================
+
+MS Exchange Server 2003/2007 backup utility. This allows you to back up
+XML-backed data "folders" in Exchange to an XML dump which can be transformed
+via XSL into something useful.
+
+This is necessary because the bright folks at Microsquish decided that it
+was better to invent their own XML format/protocol on top of WebDAV, which
+makes it impossible to use vanilla IMAP to back up contacts, calendar items,
+and other "Outlook specific" data.
+
+To build, use "mvn package"
+
+To run, use "java -jar target/exchangebackup-VERSION.jar". Specifying no
+options will explain the parameters.
+
